@@ -12,10 +12,10 @@ public class RabbitMQUtils {
     public static Channel getChannel() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         //工厂ip,连接rabbitmq队列
-        factory.setHost("192.168.0.117");
+        factory.setHost("192.168.119.128");
         //用户名
-        factory.setUsername("guest");
-        factory.setPassword("guest");
+        factory.setUsername("admin");
+        factory.setPassword("123");
         //创建连接
         Connection connection = factory.newConnection();
         //信道
